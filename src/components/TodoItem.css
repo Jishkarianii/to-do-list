@@ -1,0 +1,97 @@
+.to-do-item {
+    padding: 15px;
+    padding-left: 10px;
+    position: relative;
+    background-color: rgb(254,254,254);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    border-top: none;
+    display: flex;
+    align-items: center;
+}
+
+.check-to-do {
+    min-width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 1px solid rgb(237,237,237);
+}
+
+.check-to-do .check-icon {
+    color: transparent;
+}
+
+.checked-to-do {
+    border: 1px solid rgb(192,220,215);
+}
+
+.checked-to-do .check-icon {
+    color: rgb(93,194,175);
+}
+
+.to-do-task {
+    margin-left: 12px;
+}
+
+.to-do-task .text {
+    padding-left: 10px;
+    padding-right: 30px;
+    width: 100%;
+    font-size: 24px;
+    color: rgb(77,77,77);
+    word-break: break-all;
+    transition: 0.4s;
+}
+
+.to-do-task .strike-text {
+    text-decoration: line-through;
+    color: rgb(217,217,217);
+}
+
+.to-do-task .edited-text-cont {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 65px;
+    z-index: 1;
+    background-color: rgb(254,254,254);
+}
+
+.to-do-task .edited-text {
+    position: absolute;
+    top: 0;
+    left: 54px;
+    padding: 15px;
+    width: calc(100% - 54px);
+    height: 65px;
+    font-size: 24px;
+    color: rgb(77,77,77);
+    outline: none;
+    border: 1px solid #999;
+    box-shadow: inset 0 -1px 5px 0 rgb(0 0 0 / 20%);
+    z-index: 1;
+}
+
+.delet-item-cont {
+    position: absolute;
+    right: 22px;
+    bottom: 20px;
+}
+
+.delet-item-cont .close-icon {
+    display: none;
+    font-size: 25px;
+    color: rgb(200,146,146);
+    transition: 0.1s;
+}
+
+.delet-item-cont .close-icon:hover {
+    color: rgb(184, 100, 100);
+}
+
+.to-do-item:hover .close-icon {
+    display: block;
+}
