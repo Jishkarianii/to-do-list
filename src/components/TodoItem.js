@@ -36,6 +36,7 @@ function TodoItem({ check, task, checkEvent, deleteEvent, taskEditEvent, checkEd
                             type="text"
                             value={task}
                             onChange={taskEditEvent}
+                            onBlur={endEditTask}
                             ref={inputEl}
                         />  
                     </form>
